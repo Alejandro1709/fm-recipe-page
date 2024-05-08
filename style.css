@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --primary-color-nutmeg: hsl(14, 45%, 36%);
+  --primary-color-raspberry: hsl(332, 51%, 32%); 
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-rose-white: hsl(330, 100%, 98%);
+  --neutral-eggshell: hsl(30, 54%, 90%);
+  --neutral-light-grey: hsl(30, 18%, 87%);
+  --neutral-wenge-brown: hsl(30, 10%, 34%);
+  --neutral-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Young Serif", serif;
+  font-style: normal;
+  background-color: var(--neutral-eggshell);
+  min-height: 100vh;
+}
+
+p, ul, ol, table {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-white);
+  max-width: 100vw;
+}
+
+.recipe .recipe__header  {
+  flex: 0.1;
+  max-width: 100%;
+}
+
+.recipe .recipe__header img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.recipe .recipe__information {
+  flex: 1;
+  margin: 40px 32px;
+}
+
+.recipe .recipe__information .recipe__information__overview {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.recipe .recipe__information .recipe__information__overview .recipe__information__overview__top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recipe .recipe__information .recipe__information__overview .recipe__information__overview__bot {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--neutral-rose-white);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.recipe .recipe__information .recipe__information__overview .recipe__information__overview__bot h3 {
+  color: var(--primary-color-raspberry)
+}
+
+.recipe .recipe__information .recipe__information__overview .recipe__information__overview__bot ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.recipe .recipe__information .recipe__information__detailed {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__ingredients {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__ingredients h2 {
+  color: var(--primary-color-raspberry)
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__instructions h2 {
+  color: var(--primary-color-raspberry)
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__nutrition h2 {
+  color: var(--primary-color-raspberry)
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__nutrition table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__nutrition table tr {
+  border-bottom: 1px solid #dedede;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__nutrition table td {
+  padding: 10px 0;
+}
+
+.recipe .recipe__information .recipe__information__detailed .recipe__information__detailed__nutrition table td:nth-child(2n) {
+  color: var(--primary-color-raspberry);
+  font-weight: bold;
+}
